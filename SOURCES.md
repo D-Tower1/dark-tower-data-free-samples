@@ -1,12 +1,12 @@
 # Sources and citations
 
-All numbers in this repository come from public sources. Each source asks to be credited as shown. The Federal Reserve, FRED, the CFTC and the other sources do not endorse this repository.
+All numbers in this repository come from public sources. Each source asks to be credited as shown. The Federal Reserve, the CFTC and the other sources do not endorse this repository.
 
 ## cot
 
 ```
 SOURCES AND CITATIONS - COT Pack (daily pack)
-Data retrieved 2026-11-02 UTC.
+Data retrieved 2026-11-11 UTC.
 
 U.S. Commodity Futures Trading Commission (CFTC), Commitments of Traders, Futures Only reports, from the CFTC Public
 Reporting Environment, https://publicreporting.cftc.gov :
@@ -27,29 +27,30 @@ This product is not endorsed by the CFTC.
 
 ```
 SOURCES AND CITATIONS - Gold Drivers (daily pack)
-Data retrieved 2026-11-03 UTC.
+Data retrieved 2026-11-11 UTC.
 
-FRED series. Each source asks to be cited as follows (FRED's "Suggested Citation"):
+Every number comes straight from the agency that publishes it. The series names (DFF, DFII10 and so on) are only the
+file names we use; they are the same names as in earlier packs.
 
-[DFF] Board of Governors of the Federal Reserve System (US), Federal Funds Effective Rate [DFF], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DFF, .
+[DFF] Board of Governors of the Federal Reserve System (US), Federal Reserve Statistical Release H.15, Selected Interest Rates: Federal funds (effective), every calendar day, percent, not seasonally adjusted (DDP series RIFSPFF_N.D), https://www.federalreserve.gov/releases/h15/
 
-[CPIAUCSL] U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers: All Items in U.S. City Average [CPIAUCSL], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CPIAUCSL, .
+[DFII10] Board of Governors of the Federal Reserve System (US), Federal Reserve Statistical Release H.15, Selected Interest Rates: U.S. Treasury inflation-indexed securities, 10-year constant maturity, daily, percent (DDP series RIFLGFCY10_XII_N.B), https://www.federalreserve.gov/releases/h15/
 
-[PCEPI] U.S. Bureau of Economic Analysis, Personal Consumption Expenditures: Chain-type Price Index [PCEPI], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/PCEPI, .
+[DGS10] Board of Governors of the Federal Reserve System (US), Federal Reserve Statistical Release H.15, Selected Interest Rates: U.S. Treasury securities, 10-year constant maturity, daily, percent (DDP series RIFLGFCY10_N.B), https://www.federalreserve.gov/releases/h15/ . Used only to calculate BREAKEVEN_10Y; not shipped as its own file.
 
-[UNRATE] U.S. Bureau of Labor Statistics, Unemployment Rate [UNRATE], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/UNRATE, .
+[DTWEXBGS] Board of Governors of the Federal Reserve System (US), Federal Reserve Statistical Release H.10, Foreign Exchange Rates: Nominal Broad U.S. Dollar Index, daily, Jan 2006=100 (DDP series JRXWTFB_N.B), https://www.federalreserve.gov/releases/h10/
 
-[ICSA] U.S. Employment and Training Administration, Initial Claims [ICSA], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/ICSA, .
+[CPIAUCSL] U.S. Bureau of Labor Statistics, Consumer Price Index for All Urban Consumers (CPI-U): All items in U.S. city average, seasonally adjusted, 1982-84=100, monthly (BLS series CUSR0000SA0, BLS Public Data API), https://www.bls.gov/cpi/
 
-[DFII10] Board of Governors of the Federal Reserve System (US), Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity, Quoted on an Investment Basis, Inflation-Indexed [DFII10], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DFII10, .
+[UNRATE] U.S. Bureau of Labor Statistics, Labor Force Statistics from the Current Population Survey: Unemployment Rate, seasonally adjusted, percent, monthly (BLS series LNS14000000, BLS Public Data API), https://www.bls.gov/cps/
 
-[DTWEXBGS] Board of Governors of the Federal Reserve System (US), Nominal Broad U.S. Dollar Index [DTWEXBGS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DTWEXBGS, .
+[PCEPI] U.S. Bureau of Economic Analysis, National Income and Product Accounts: Personal Consumption Expenditures, chain-type price index, 2017=100, seasonally adjusted, monthly (NIPA series DPCERG, NipaDataM.txt), https://apps.bea.gov/national/Release/TXT/NipaDataM.txt
 
-[DGS10] Board of Governors of the Federal Reserve System (US), Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity, Quoted on an Investment Basis [DGS10], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DGS10, .
+[ICSA] U.S. Department of Labor, Employment and Training Administration, Unemployment Insurance Weekly Claims: national initial claims, seasonally adjusted, number of people, weekly ending Saturday (weekly claims data https://oui.doleta.gov/unemploy/claims.asp; newest weeks from the latest weekly news release https://www.dol.gov/ui/data.pdf)
 
 Derived series BREAKEVEN_10Y: calculated by Tower from two of the series above:
   10-year breakeven inflation = DGS10 minus DFII10 (same day, percentage points).
-  It is our own calculation, not a number published by FRED or the Federal Reserve.
+  It is our own calculation, not a number published by the Federal Reserve.
 
 Commitments of Traders (COT):
 U.S. Commodity Futures Trading Commission, Commitments of Traders, Disaggregated Futures Only report,
@@ -58,71 +59,50 @@ The CFTC dataset metadata names no required citation wording or licence; we cred
 Net managed-money position = managed-money long minus managed-money short; the week-over-week change is our calculation.
 COT_GOLD_HISTORY.csv is built from the CFTC historical compressed files (fut_disagg_txt_YYYY.zip, https://www.cftc.gov/MarketReports/CommitmentsofTraders/HistoricalCompressed/index.htm). The change is versus the previous published report (holiday weeks shift the date).
 
-FRED is a service of the Federal Reserve Bank of St. Louis. This product is not endorsed by FRED, the Federal Reserve,
-the BLS, the BEA, the Employment and Training Administration or the CFTC.
+This product is not endorsed by the Federal Reserve, the BLS, the BEA, the Employment and Training Administration or the CFTC.
 ```
 
 ## fed_forex
 
 ```
 SOURCES AND CITATIONS - Forex Daily (Federal Reserve rates), daily pack
-Data retrieved 2026-11-03 UTC.
+Data retrieved 2026-11-11 UTC.
 
-All numbers come from the Federal Reserve Board's H.10 'Foreign Exchange Rates' release, as distributed by FRED, and the
-Board's broad dollar index. FRED marks every series below 'Public Domain: Citation Requested'. FRED asks to be cited like this
-(FRED's "Suggested Citation"):
+All numbers come straight from the Federal Reserve Board: the H.10 'Foreign Exchange Rates' release and the Board's broad
+dollar index, taken from the Board's Data Download Program (https://www.federalreserve.gov/datadownload/). The Board's data
+is a US government work; we credit the Board as the source. Citation used for every series below:
+Board of Governors of the Federal Reserve System (US), Federal Reserve Statistical Release H.10, Foreign Exchange Rates,
+https://www.federalreserve.gov/releases/h10/ , series as named here.
 
-[DEXUSEU] Board of Governors of the Federal Reserve System (US), U.S. Dollars to Euro Spot Exchange Rate [DEXUSEU], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXUSEU, .
-
-[DEXUSUK] Board of Governors of the Federal Reserve System (US), U.S. Dollars to U.K. Pound Sterling Spot Exchange Rate [DEXUSUK], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXUSUK, .
-
-[DEXUSAL] Board of Governors of the Federal Reserve System (US), U.S. Dollars to Australian Dollar Spot Exchange Rate [DEXUSAL], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXUSAL, .
-
-[DEXUSNZ] Board of Governors of the Federal Reserve System (US), U.S. Dollars to New Zealand Dollar Spot Exchange Rate [DEXUSNZ], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXUSNZ, .
-
-[DEXJPUS] Board of Governors of the Federal Reserve System (US), Japanese Yen to U.S. Dollar Spot Exchange Rate [DEXJPUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXJPUS, .
-
-[DEXCAUS] Board of Governors of the Federal Reserve System (US), Canadian Dollars to U.S. Dollar Spot Exchange Rate [DEXCAUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXCAUS, .
-
-[DEXSZUS] Board of Governors of the Federal Reserve System (US), Swiss Francs to U.S. Dollar Spot Exchange Rate [DEXSZUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXSZUS, .
-
-[DEXCHUS] Board of Governors of the Federal Reserve System (US), Chinese Yuan Renminbi to U.S. Dollar Spot Exchange Rate [DEXCHUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXCHUS, .
-
-[DEXKOUS] Board of Governors of the Federal Reserve System (US), South Korean Won to U.S. Dollar Spot Exchange Rate [DEXKOUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXKOUS, .
-
-[DEXINUS] Board of Governors of the Federal Reserve System (US), Indian Rupees to U.S. Dollar Spot Exchange Rate [DEXINUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXINUS, .
-
-[DEXMXUS] Board of Governors of the Federal Reserve System (US), Mexican Pesos to U.S. Dollar Spot Exchange Rate [DEXMXUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXMXUS, .
-
-[DEXBZUS] Board of Governors of the Federal Reserve System (US), Brazilian Reals to U.S. Dollar Spot Exchange Rate [DEXBZUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXBZUS, .
-
-[DEXSDUS] Board of Governors of the Federal Reserve System (US), Swedish Kronor to U.S. Dollar Spot Exchange Rate [DEXSDUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXSDUS, .
-
-[DEXSFUS] Board of Governors of the Federal Reserve System (US), South African Rand to U.S. Dollar Spot Exchange Rate [DEXSFUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXSFUS, .
-
-[DEXTAUS] Board of Governors of the Federal Reserve System (US), Taiwan Dollars to U.S. Dollar Spot Exchange Rate [DEXTAUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXTAUS, .
-
-[DEXHKUS] Board of Governors of the Federal Reserve System (US), Hong Kong Dollars to U.S. Dollar Spot Exchange Rate [DEXHKUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXHKUS, .
-
-[DEXSIUS] Board of Governors of the Federal Reserve System (US), Singapore Dollars to U.S. Dollar Spot Exchange Rate [DEXSIUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXSIUS, .
-
-[DEXNOUS] Board of Governors of the Federal Reserve System (US), Norwegian Kroner to U.S. Dollar Spot Exchange Rate [DEXNOUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXNOUS, .
-
-[DEXDNUS] Board of Governors of the Federal Reserve System (US), Danish Kroner to U.S. Dollar Spot Exchange Rate [DEXDNUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXDNUS, .
-
-[DEXTHUS] Board of Governors of the Federal Reserve System (US), Thai Baht to U.S. Dollar Spot Exchange Rate [DEXTHUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXTHUS, .
-
-[DEXMAUS] Board of Governors of the Federal Reserve System (US), Malaysian Ringgit to U.S. Dollar Spot Exchange Rate [DEXMAUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXMAUS, .
-
-[DEXSLUS] Board of Governors of the Federal Reserve System (US), Sri Lankan Rupees to U.S. Dollar Spot Exchange Rate [DEXSLUS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DEXSLUS, .
-
-[DTWEXBGS] Board of Governors of the Federal Reserve System (US), Nominal Broad U.S. Dollar Index [DTWEXBGS], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/DTWEXBGS, .
+[DEXUSEU] U.S. Dollars to Euro Spot Exchange Rate - Federal Reserve H.10 series RXI$US_N.B.EU
+[DEXUSUK] U.S. Dollars to U.K. Pound Sterling Spot Exchange Rate - Federal Reserve H.10 series RXI$US_N.B.UK
+[DEXUSAL] U.S. Dollars to Australian Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI$US_N.B.AL
+[DEXUSNZ] U.S. Dollars to New Zealand Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI$US_N.B.NZ
+[DEXJPUS] Japanese Yen to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.JA
+[DEXCAUS] Canadian Dollars to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.CA
+[DEXSZUS] Swiss Francs to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.SZ
+[DEXCHUS] Chinese Yuan Renminbi to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.CH
+[DEXKOUS] South Korean Won to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.KO
+[DEXINUS] Indian Rupees to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.IN
+[DEXMXUS] Mexican Pesos to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.MX
+[DEXBZUS] Brazilian Reals to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.BZ
+[DEXSDUS] Swedish Kronor to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.SD
+[DEXSFUS] South African Rand to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.SF
+[DEXTAUS] Taiwan Dollars to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.TA
+[DEXHKUS] Hong Kong Dollars to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.HK
+[DEXSIUS] Singapore Dollars to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.SI
+[DEXNOUS] Norwegian Kroner to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.NO
+[DEXDNUS] Danish Kroner to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.DN
+[DEXTHUS] Thai Baht to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.TH
+[DEXMAUS] Malaysian Ringgit to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.MA
+[DEXSLUS] Sri Lankan Rupees to U.S. Dollar Spot Exchange Rate - Federal Reserve H.10 series RXI_N.B.SL
+[DTWEXBGS] Nominal Broad U.S. Dollar Index - Federal Reserve H.10 series JRXWTFB_N.B
 
 What the H.10 rates are: noon buying rates in New York City for cable transfers payable in foreign currencies, one
 value per business day. They are published by the Federal Reserve, normally once a week (Monday, for the week before).
 Pair names: EUR_USD, GBP_USD, AUD_USD and NZD_USD are US dollars per one euro / pound / Australian dollar / New Zealand
 dollar. Every other pair USD_xxx is units of that currency per one US dollar. Values are exactly as published; we do not
-invert, smooth, fill or round them.
+invert, smooth, fill or round them. The ids (DEXUSEU and so on) are only our file names, kept from earlier packs.
 
-FRED is a service of the Federal Reserve Bank of St. Louis. This product is not endorsed by FRED or the Federal Reserve.
+This product is not endorsed by the Federal Reserve.
 ```
