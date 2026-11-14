@@ -27,7 +27,7 @@ Full 10-year history and daily updates, with a README, the source citations and 
 | `gold_drivers/` | What gold is watched next to: Fed funds rate, 10-year real yield, 10-year breakeven inflation (our calculation), broad dollar index (last 12 weeks); CPI, PCE prices and unemployment (last 3 months); jobless claims (last 12 weeks); CFTC gold positioning (last 12 weekly reports). No gold price. |
 | `fed_forex/` | The Federal Reserve's H.10 daily exchange rates of the US dollar against 22 currencies (last 12 weeks) and the latest rate and change per pair. One noon rate per business day; **not live prices**. |
 
-Built from our daily packs dated: COT 2026-11-11, Gold Drivers 2026-11-11, Forex Daily (Federal Reserve rates) 2026-11-11.
+Built from our daily packs dated: COT 2026-11-13, Gold Drivers 2026-11-13, Forex Daily (Federal Reserve rates) 2026-11-13.
 
 Files (rows, first and last date):
 ```
@@ -47,12 +47,12 @@ Files (rows, first and last date):
   data/cot/treasury_10y.csv  (12 rows, 2026-08-18 to 2026-11-03)
   data/fed_forex/FED_FX_DAILY.csv  (58 rows, 2026-08-17 to 2026-11-06)
   data/fed_forex/FED_FX_LATEST.csv  (22 rows, latest per pair)
-  data/gold_drivers/BREAKEVEN_10Y.csv  (58 rows, 2026-08-18 to 2026-11-09)
+  data/gold_drivers/BREAKEVEN_10Y.csv  (58 rows, 2026-08-19 to 2026-11-10)
   data/gold_drivers/CPIAUCSL.csv  (3 rows, 2026-08-01 to 2026-10-01)
-  data/gold_drivers/DFF.csv  (84 rows, 2026-08-18 to 2026-11-09)
-  data/gold_drivers/DFII10.csv  (58 rows, 2026-08-18 to 2026-11-09)
+  data/gold_drivers/DFF.csv  (84 rows, 2026-08-20 to 2026-11-11)
+  data/gold_drivers/DFII10.csv  (58 rows, 2026-08-19 to 2026-11-10)
   data/gold_drivers/DTWEXBGS.csv  (58 rows, 2026-08-17 to 2026-11-06)
-  data/gold_drivers/ICSA.csv  (12 rows, 2026-08-15 to 2026-10-31)
+  data/gold_drivers/ICSA.csv  (12 rows, 2026-08-22 to 2026-11-07)
   data/gold_drivers/PCEPI.csv  (3 rows, 2026-07-01 to 2026-09-01)
   data/gold_drivers/UNRATE.csv  (3 rows, 2026-08-01 to 2026-10-01)
   data/gold_drivers/cot_gold_history.csv  (12 rows, 2026-08-18 to 2026-11-03)

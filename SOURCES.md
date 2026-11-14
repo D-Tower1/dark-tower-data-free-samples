@@ -6,7 +6,7 @@ All numbers in this repository come from public sources. Each source asks to be 
 
 ```
 SOURCES AND CITATIONS - COT Pack (daily pack)
-Data retrieved 2026-11-11 UTC.
+Data retrieved 2026-11-13 UTC.
 
 U.S. Commodity Futures Trading Commission (CFTC), Commitments of Traders, Futures Only reports, from the CFTC Public
 Reporting Environment, https://publicreporting.cftc.gov :
@@ -27,7 +27,7 @@ This product is not endorsed by the CFTC.
 
 ```
 SOURCES AND CITATIONS - Gold Drivers (daily pack)
-Data retrieved 2026-11-11 UTC.
+Data retrieved 2026-11-13 UTC.
 
 Every number comes straight from the agency that publishes it. The series names (DFF, DFII10 and so on) are only the
 file names we use; they are the same names as in earlier packs.
@@ -66,7 +66,7 @@ This product is not endorsed by the Federal Reserve, the BLS, the BEA, the Emplo
 
 ```
 SOURCES AND CITATIONS - Forex Daily (Federal Reserve rates), daily pack
-Data retrieved 2026-11-11 UTC.
+Data retrieved 2026-11-13 UTC.
 
 All numbers come straight from the Federal Reserve Board: the H.10 'Foreign Exchange Rates' release and the Board's broad
 dollar index, taken from the Board's Data Download Program (https://www.federalreserve.gov/datadownload/). The Board's data
