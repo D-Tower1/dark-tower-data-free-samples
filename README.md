@@ -27,36 +27,36 @@ Full 10-year history and daily updates, with a README, the source citations and 
 | `gold_drivers/` | What gold is watched next to: Fed funds rate, 10-year real yield, 10-year breakeven inflation (our calculation), broad dollar index (last 12 weeks); CPI, PCE prices and unemployment (last 3 months); jobless claims (last 12 weeks); CFTC gold positioning (last 12 weekly reports). No gold price. |
 | `fed_forex/` | The Federal Reserve's H.10 daily exchange rates of the US dollar against 22 currencies (last 12 weeks) and the latest rate and change per pair. One noon rate per business day; **not live prices**. |
 
-Built from our daily packs dated: COT 2026-11-13, Gold Drivers 2026-11-13, Forex Daily (Federal Reserve rates) 2026-11-13.
+Built from our daily packs dated: COT 2026-11-16, Gold Drivers 2026-11-17, Forex Daily (Federal Reserve rates) 2026-11-16.
 
 Files (rows, first and last date):
 ```
-  data/cot/COT_LATEST.csv  (65 rows, 2026-11-03 to 2026-11-03)
-  data/cot/british_pound.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/copper.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/crude_oil_wti.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/dow.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/euro_fx.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/gold.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/japanese_yen.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/nasdaq.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/natural_gas.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/russell2000.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/silver.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/sp500.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/cot/treasury_10y.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/fed_forex/FED_FX_DAILY.csv  (58 rows, 2026-08-17 to 2026-11-06)
+  data/cot/COT_LATEST.csv  (65 rows, 2026-11-10 to 2026-11-10)
+  data/cot/british_pound.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/copper.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/crude_oil_wti.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/dow.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/euro_fx.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/gold.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/japanese_yen.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/nasdaq.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/natural_gas.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/russell2000.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/silver.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/sp500.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/cot/treasury_10y.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/fed_forex/FED_FX_DAILY.csv  (57 rows, 2026-08-24 to 2026-11-13)
   data/fed_forex/FED_FX_LATEST.csv  (22 rows, latest per pair)
-  data/gold_drivers/BREAKEVEN_10Y.csv  (58 rows, 2026-08-19 to 2026-11-10)
+  data/gold_drivers/BREAKEVEN_10Y.csv  (57 rows, 2026-08-24 to 2026-11-13)
   data/gold_drivers/CPIAUCSL.csv  (3 rows, 2026-08-01 to 2026-10-01)
-  data/gold_drivers/DFF.csv  (84 rows, 2026-08-20 to 2026-11-11)
-  data/gold_drivers/DFII10.csv  (58 rows, 2026-08-19 to 2026-11-10)
-  data/gold_drivers/DTWEXBGS.csv  (58 rows, 2026-08-17 to 2026-11-06)
+  data/gold_drivers/DFF.csv  (84 rows, 2026-08-22 to 2026-11-13)
+  data/gold_drivers/DFII10.csv  (57 rows, 2026-08-24 to 2026-11-13)
+  data/gold_drivers/DTWEXBGS.csv  (57 rows, 2026-08-24 to 2026-11-13)
   data/gold_drivers/ICSA.csv  (12 rows, 2026-08-22 to 2026-11-07)
   data/gold_drivers/PCEPI.csv  (3 rows, 2026-07-01 to 2026-09-01)
   data/gold_drivers/UNRATE.csv  (3 rows, 2026-08-01 to 2026-10-01)
-  data/gold_drivers/cot_gold_history.csv  (12 rows, 2026-08-18 to 2026-11-03)
-  data/gold_drivers/cot_gold_latest.csv  (1 rows, 2026-11-03 to 2026-11-03)
+  data/gold_drivers/cot_gold_history.csv  (12 rows, 2026-08-25 to 2026-11-10)
+  data/gold_drivers/cot_gold_latest.csv  (1 rows, 2026-11-10 to 2026-11-10)
 ```
 
 ## Sources and licence

@@ -1,5 +1,4 @@
 report_date,market,cftc_code,open_interest,dealer_long,dealer_short,dealer_net,dealer_net_change_wow,asset_manager_long,asset_manager_short,asset_manager_net,asset_manager_net_change_wow,leveraged_funds_long,leveraged_funds_short,leveraged_funds_net,leveraged_funds_net_change_wow,other_reportable_long,other_reportable_short,other_reportable_net,other_reportable_net_change_wow,non_reportable_long,non_reportable_short,non_reportable_net,non_reportable_net_change_wow
-2026-08-18,Dow Jones (DJIA x $5),124603,90072,43420,54456,-11036,2366,14879,12418,2461,-5568,13568,11533,2035,3242,449,250,199,-46,16287,9946,6341,6
 2026-08-25,Dow Jones (DJIA x $5),124603,88454,44232,53727,-9495,1541,16835,11323,5512,3051,9874,11509,-1635,-3670,255,250,5,-194,15796,10183,5613,-728
 2026-09-01,Dow Jones (DJIA x $5),124603,86927,43825,51139,-7314,2181,15318,9791,5527,15,10471,12202,-1731,-96,249,250,-1,-6,15461,11942,3519,-2094
 2026-09-08,Dow Jones (DJIA x $5),124603,89114,44554,53199,-8645,-1331,16923,8332,8591,3064,9906,14165,-4259,-2528,309,250,59,60,14973,10719,4254,735
@@ -11,3 +10,4 @@ report_date,market,cftc_code,open_interest,dealer_long,dealer_short,dealer_net,d
 2026-10-20,Dow Jones (DJIA x $5),124603,90022,41827,54980,-13153,5296,18435,5369,13066,2193,13511,15478,-1967,-4776,666,0,666,220,11923,10535,1388,-2933
 2026-10-27,Dow Jones (DJIA x $5),124603,91636,42398,57434,-15036,-1883,18976,6743,12233,-833,13822,13726,96,2063,666,200,466,-200,12639,10398,2241,853
 2026-11-03,Dow Jones (DJIA x $5),124603,87410,42047,56069,-14022,1014,16728,8508,8220,-4013,11980,11160,820,724,458,0,458,-8,12780,8256,4524,2283
+2026-11-10,Dow Jones (DJIA x $5),124603,83148,41417,48553,-7136,6886,14272,12192,2080,-6140,10470,9155,1315,495,965,0,965,507,12276,9500,2776,-1748
